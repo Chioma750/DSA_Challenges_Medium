@@ -7,8 +7,8 @@ def second_largest(numbers):
             second_largest = largest
             largest = num
     
-        #elif num > second_largest and num != largest:
-         #   second_largest = num
+        elif num != largest and (second_largest is None or num > second_largest):
+            second_largest = num
 
     return second_largest
 
